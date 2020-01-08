@@ -15,6 +15,31 @@
     <div class="row">
       <div class="col-xs-12 col-md-12">
         <h1>D3Times</h1>
+        <h5 id="date"></h5>
+        <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        m_name = "";
+          switch (m){
+          case 1: m_name = "January"; break;
+          case 2: m_name = "Feburary"; break;
+          case 3: m_name = "March"; break;
+          case 4: m_name = "April"; break;
+          case 5: m_name = "May"; break;
+          case 6: m_name = "June"; break;
+          case 7: m_name = "July"; break;
+          case 8: m_name = "August"; break;
+          case 9: m_name = "September"; break;
+          case 10: m_name = "October"; break;
+          case 11: m_name = "November"; break;
+          case 12: m_name = "December"; break;
+          };
+          document.getElementById("date").innerHTML = m_name + " " + d + ", " + y;
+        </script>
+
+        <br>
       </div>
     </div>
     <div class="row">
